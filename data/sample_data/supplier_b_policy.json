@@ -1,0 +1,5 @@
+{
+  "company_name": "Supplier B",
+  "document_title": "Data Processing & Jurisdiction Agreement",
+  "content": "Supplier B processes transaction records for major international partners, including Company X. Supplier B stores all received Customer Data in its primary servers located in a Foreign Jurisdiction (specifically, Jurisdiction F). Supplier B undergoes a periodic Cybersecurity Audit to verify compliance with local laws. This audit is conducted by a Third-Party Auditor appointed by Jurisdiction F's corporate regulator. Jurisdiction F does not have a formal data protection adequacy treaty with the US, and local regulatory laws permit local government agencies to inspect foreign-owned datasets under national security provisions."
+}

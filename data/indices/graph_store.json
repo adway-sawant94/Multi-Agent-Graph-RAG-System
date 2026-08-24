@@ -1,0 +1,1263 @@
+{
+  "skeleton": {
+    "nodes": [
+      [
+        "Compliance",
+        {
+          "category": "Legal Domain",
+          "description": "Regulatory context for Compliance",
+          "type": "skeleton"
+        }
+      ],
+      [
+        "Corporate Partnerships",
+        {
+          "category": "Legal Domain",
+          "description": "Regulatory context for Corporate Partnerships",
+          "type": "skeleton"
+        }
+      ],
+      [
+        "Data Security",
+        {
+          "category": "Legal Domain",
+          "description": "Regulatory context for Data Security",
+          "type": "skeleton"
+        }
+      ],
+      [
+        "Federal Regulations",
+        {
+          "category": "Legal Domain",
+          "description": "Regulatory context for Federal Regulations",
+          "type": "skeleton"
+        }
+      ]
+    ],
+    "edges": []
+  },
+  "bipartite": {
+    "nodes": [
+      [
+        "chunk_company_x_policy_0",
+        {
+          "type": "chunk",
+          "text": "{\n  \"company_name\": \"Company X\",\n  \"document_title\": \"Corporate Data Sharing Protocol\",\n  \"content\": \"Company X partners with Supplier B to process its core customer transaction records. As part of this corporate partnership, Company X shares protected Customer Data, which includes Personally Identifiable Information (PII) such as full names, social security numbers, and banking details. Under section 4 of the agreement, Supplier B is responsible for storing and managing this data in their database servers. Company X mandates that any external partner must implement encryption at rest, but cyb",
+          "source_file": "company_x_policy.json",
+          "doc_type": "json"
+        }
+      ],
+      [
+        "Company X",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "The primary corporate entity initiating the partnership and sharing customer data."
+        }
+      ],
+      [
+        "Supplier B",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "An external partner responsible for storing and managing customer transaction records in their database servers."
+        }
+      ],
+      [
+        "Customer Data",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "Protected client records containing personally identifiable information shared between Company X and Supplier B."
+        }
+      ],
+      [
+        "Personally Identifiable Information (PII)",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "Sensitive customer details including full names, social security numbers, and banking information."
+        }
+      ],
+      [
+        "Corporate Data Sharing Protocol",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "The governing agreement outline that establishes data sharing and protection requirements between the organizations."
+        }
+      ],
+      [
+        "chunk_company_x_policy_1",
+        {
+          "type": "chunk",
+          "text": "ase servers. Company X mandates that any external partner must implement encryption at rest, but cybersecurity audits are outsourced to the partner's local jurisdiction requirements.\"\n}",
+          "source_file": "company_x_policy.json",
+          "doc_type": "json"
+        }
+      ],
+      [
+        "External partner",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Any third-party vendor or business partner collaborating with Company X."
+        }
+      ],
+      [
+        "Encryption at rest",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "The cryptographic protection of data while stored on database servers or physical media."
+        }
+      ],
+      [
+        "Cybersecurity audits",
+        {
+          "type": "entity",
+          "entity_type": "Audit",
+          "description": "Assessments conducted to evaluate compliance with security controls and standards."
+        }
+      ],
+      [
+        "Local jurisdiction requirements",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "The specific regional laws, standards, and regulatory frameworks governing the partner's location."
+        }
+      ],
+      [
+        "chunk_supplier_b_policy_0",
+        {
+          "type": "chunk",
+          "text": "{\n  \"company_name\": \"Supplier B\",\n  \"document_title\": \"Data Processing & Jurisdiction Agreement\",\n  \"content\": \"Supplier B processes transaction records for major international partners, including Company X. Supplier B stores all received Customer Data in its primary servers located in a Foreign Jurisdiction (specifically, Jurisdiction F). Supplier B undergoes a periodic Cybersecurity Audit to verify compliance with local laws. This audit is conducted by a Third-Party Auditor appointed by Jurisdiction F's corporate regulator. Jurisdiction F does not have a formal data protection adequacy treat",
+          "source_file": "supplier_b_policy.json",
+          "doc_type": "json"
+        }
+      ],
+      [
+        "Jurisdiction F",
+        {
+          "type": "entity",
+          "entity_type": "Location",
+          "description": "The foreign jurisdiction where Supplier B's primary servers are located."
+        }
+      ],
+      [
+        "Cybersecurity Audit",
+        {
+          "type": "entity",
+          "entity_type": "Audit",
+          "description": "A periodic assessment undergone by Supplier B to verify compliance with local laws."
+        }
+      ],
+      [
+        "Third-Party Auditor",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "An independent auditor appointed by the corporate regulator of Jurisdiction F to conduct cybersecurity audits."
+        }
+      ],
+      [
+        "Corporate Regulator",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "The government body in Jurisdiction F responsible for appointing the third-party auditor."
+        }
+      ],
+      [
+        "chunk_supplier_b_policy_1",
+        {
+          "type": "chunk",
+          "text": "iction F's corporate regulator. Jurisdiction F does not have a formal data protection adequacy treaty with the US, and local regulatory laws permit local government agencies to inspect foreign-owned datasets under national security provisions.\"\n}",
+          "source_file": "supplier_b_policy.json",
+          "doc_type": "json"
+        }
+      ],
+      [
+        "US",
+        {
+          "type": "entity",
+          "entity_type": "Location",
+          "description": "The United States, which does not share a formal data protection adequacy treaty with Jurisdiction F."
+        }
+      ],
+      [
+        "Local government agencies",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Government entities in Jurisdiction F empowered to perform data inspections under security laws."
+        }
+      ],
+      [
+        "Local regulatory laws",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "Statutes within Jurisdiction F that dictate compliance and allow data access under national security grounds."
+        }
+      ],
+      [
+        "Foreign-owned datasets",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "Information assets owned by foreign corporations that are subject to local regulatory inspection."
+        }
+      ],
+      [
+        "National security provisions",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "Legal provisions used to justify the inspection of foreign-owned datasets by local authorities."
+        }
+      ],
+      [
+        "Dataset inspection",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "chunk_federal_privacy_regulation_0",
+        {
+          "type": "chunk",
+          "text": "Federal Privacy Regulation - Act Z (Data Sharing Restrictions)\nThis act governs the transfer of protected customer data containing Personally Identifiable Information (PII) by domestic corporations.\n\nSection 102 (Cross-Border Compliance):\nAll domestic corporations must comply with Federal Privacy Regulations. Section 102 strictly prohibits the sharing of protected Customer Data (including PII) with any Foreign Entities or storing such data in a Foreign Jurisdiction that lacks an established data adequacy treaty with the federal government. Foreign jurisdictions that lack adequate safeguards or",
+          "source_file": "federal_privacy_regulation.txt",
+          "doc_type": "text"
+        }
+      ],
+      [
+        "Act Z",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "Federal privacy regulation governing the transfer of protected customer data containing PII by domestic corporations."
+        }
+      ],
+      [
+        "Section 102",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "A section of Act Z concerning cross-border compliance and restrictions on sharing data with foreign entities."
+        }
+      ],
+      [
+        "Domestic Corporations",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Corporate entities operating within the domestic jurisdiction subject to federal privacy regulations."
+        }
+      ],
+      [
+        "Foreign Entities",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Entities located outside the domestic jurisdiction with whom sharing of customer data is restricted."
+        }
+      ],
+      [
+        "Foreign Jurisdiction",
+        {
+          "type": "entity",
+          "entity_type": "Location",
+          "description": "Jurisdictions outside the domestic country that may lack adequate data protection safeguards."
+        }
+      ],
+      [
+        "Personally Identifiable Information",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "chunk_federal_privacy_regulation_1",
+        {
+          "type": "chunk",
+          "text": " adequacy treaty with the federal government. Foreign jurisdictions that lack adequate safeguards or allow arbitrary local government access are designated as High-Risk Jurisdictions. Any domestic entity found sharing PII with organizations in these high-risk areas is subject to immediate regulatory fines and cessation of data transfers.\n\nSection 103 (Security Mandates):\nAll databases containing PII must mandate multi-factor authentication and end-to-end encryption.\n",
+          "source_file": "federal_privacy_regulation.txt",
+          "doc_type": "text"
+        }
+      ],
+      [
+        "High-Risk Jurisdictions",
+        {
+          "type": "entity",
+          "entity_type": "Location",
+          "description": "Foreign jurisdictions that lack adequate data safeguards or permit arbitrary government access."
+        }
+      ],
+      [
+        "Federal Government",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "The national governing authority that establishes adequacy treaties."
+        }
+      ],
+      [
+        "Domestic Entity",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "Any organization operating locally that is subject to national regulatory laws."
+        }
+      ],
+      [
+        "PII",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "Personally Identifiable Information, which is subject to privacy protections and security mandates."
+        }
+      ],
+      [
+        "Section 103",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "The specific regulatory section detailing security mandates for protected databases."
+        }
+      ],
+      [
+        "Multi-factor authentication",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "A security control requiring multiple pieces of evidence for access authorization."
+        }
+      ],
+      [
+        "End-to-end encryption",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "A secure communication and data storage mechanism that prevents unauthorized third-party access."
+        }
+      ],
+      [
+        "Foreign jurisdictions lacking adequate safeguards",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "Domestic entity sharing PII with High-Risk Jurisdictions",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "immediate regulatory fines",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "cessation of data transfers",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "multi-factor authentication",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "end-to-end encryption",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "Databases containing PII",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "External Partner",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Third-party entity collaborating with Company X and subject to its security mandates."
+        }
+      ],
+      [
+        "Encryption at Rest",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "A data security measure protecting inactive data stored on physical or virtual media."
+        }
+      ],
+      [
+        "Cybersecurity Audits",
+        {
+          "type": "entity",
+          "entity_type": "Audit",
+          "description": "Evaluations conducted to assess the security posture and regulatory compliance of an organization."
+        }
+      ],
+      [
+        "Local Jurisdiction Requirements",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "Regional legal and regulatory standards governing audit practices in the partner's home territory."
+        }
+      ],
+      [
+        "Jurisdiction F's corporate regulator",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "The governing authority overseeing corporate compliance and business operations within Jurisdiction F."
+        }
+      ],
+      [
+        "local government agencies",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Government entities within Jurisdiction F authorized to review datasets."
+        }
+      ],
+      [
+        "local regulatory laws",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "The domestic statutes of Jurisdiction F that authorize data inspections."
+        }
+      ],
+      [
+        "foreign-owned datasets",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": "Data storage assets belonging to organizations outside Jurisdiction F."
+        }
+      ],
+      [
+        "national security provisions",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "Legal exceptions allowing state inspection of assets for public security and defense purposes."
+        }
+      ],
+      [
+        "dataset inspection",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ],
+      [
+        "Foreign jurisdictions",
+        {
+          "type": "entity",
+          "entity_type": "Location",
+          "description": "Jurisdictions lacking adequate safeguards or allowing arbitrary local government access."
+        }
+      ],
+      [
+        "Domestic entity",
+        {
+          "type": "entity",
+          "entity_type": "Organization",
+          "description": "Any domestic business or organization subject to regulatory compliance."
+        }
+      ],
+      [
+        "Section 103 (Security Mandates)",
+        {
+          "type": "entity",
+          "entity_type": "Regulation",
+          "description": "Regulatory section mandating database security requirements."
+        }
+      ],
+      [
+        "regulatory fines",
+        {
+          "type": "entity",
+          "entity_type": "Concept",
+          "description": ""
+        }
+      ]
+    ],
+    "edges": [
+      {
+        "source": "chunk_company_x_policy_0",
+        "target": "Company X",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_0",
+        "target": "Supplier B",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_0",
+        "target": "Customer Data",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_0",
+        "target": "Personally Identifiable Information (PII)",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_0",
+        "target": "Corporate Data Sharing Protocol",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_0",
+        "target": "PII",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Company X",
+        "target": "Supplier B",
+        "relationship": "triplet",
+        "predicate": "partners with",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "Company X",
+        "target": "Customer Data",
+        "relationship": "triplet",
+        "predicate": "prohibits sharing with",
+        "source_chunk": "chunk_company_x_policy_0"
+      },
+      {
+        "source": "Company X",
+        "target": "Corporate Data Sharing Protocol",
+        "relationship": "triplet",
+        "predicate": "governed by",
+        "source_chunk": "chunk_company_x_policy_0"
+      },
+      {
+        "source": "Company X",
+        "target": "chunk_company_x_policy_1",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Company X",
+        "target": "External partner",
+        "relationship": "triplet",
+        "predicate": "mandates",
+        "source_chunk": "chunk_company_x_policy_1"
+      },
+      {
+        "source": "Company X",
+        "target": "chunk_supplier_b_policy_0",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Company X",
+        "target": "External Partner",
+        "relationship": "triplet",
+        "predicate": "mandates",
+        "source_chunk": "chunk_company_x_policy_1"
+      },
+      {
+        "source": "Supplier B",
+        "target": "Customer Data",
+        "relationship": "triplet",
+        "predicate": "stores data for",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "Supplier B",
+        "target": "Corporate Data Sharing Protocol",
+        "relationship": "triplet",
+        "predicate": "governed by",
+        "source_chunk": "chunk_company_x_policy_0"
+      },
+      {
+        "source": "Supplier B",
+        "target": "chunk_supplier_b_policy_0",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Supplier B",
+        "target": "Jurisdiction F",
+        "relationship": "triplet",
+        "predicate": "stores data for",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "Supplier B",
+        "target": "Cybersecurity Audit",
+        "relationship": "triplet",
+        "predicate": "undergoes audit",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "Customer Data",
+        "target": "Personally Identifiable Information (PII)",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_company_x_policy_0"
+      },
+      {
+        "source": "Customer Data",
+        "target": "chunk_supplier_b_policy_0",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Customer Data",
+        "target": "chunk_federal_privacy_regulation_0",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Customer Data",
+        "target": "Act Z",
+        "relationship": "triplet",
+        "predicate": "governed by",
+        "source_chunk": "chunk_federal_privacy_regulation_0"
+      },
+      {
+        "source": "Customer Data",
+        "target": "Personally Identifiable Information",
+        "relationship": "triplet",
+        "predicate": "contains",
+        "source_chunk": "chunk_federal_privacy_regulation_0"
+      },
+      {
+        "source": "Customer Data",
+        "target": "PII",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_company_x_policy_0"
+      },
+      {
+        "source": "Customer Data",
+        "target": "Jurisdiction F",
+        "relationship": "triplet",
+        "predicate": "partners with",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "External partner",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "Encryption at rest",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "Cybersecurity audits",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "Local jurisdiction requirements",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "External Partner",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "Encryption at Rest",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "Cybersecurity Audits",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_company_x_policy_1",
+        "target": "Local Jurisdiction Requirements",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "External partner",
+        "target": "Encryption at rest",
+        "relationship": "triplet",
+        "predicate": "must comply with",
+        "source_chunk": "chunk_company_x_policy_1"
+      },
+      {
+        "source": "Cybersecurity audits",
+        "target": "Local jurisdiction requirements",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_company_x_policy_1"
+      },
+      {
+        "source": "chunk_supplier_b_policy_0",
+        "target": "Jurisdiction F",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_0",
+        "target": "Cybersecurity Audit",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_0",
+        "target": "Third-Party Auditor",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_0",
+        "target": "Corporate Regulator",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_0",
+        "target": "Jurisdiction F's corporate regulator",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Jurisdiction F",
+        "target": "chunk_supplier_b_policy_1",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Jurisdiction F",
+        "target": "US",
+        "relationship": "triplet",
+        "predicate": "must comply with",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "Cybersecurity Audit",
+        "target": "Third-Party Auditor",
+        "relationship": "triplet",
+        "predicate": "governed by",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "Third-Party Auditor",
+        "target": "Corporate Regulator",
+        "relationship": "triplet",
+        "predicate": "governed by",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "Third-Party Auditor",
+        "target": "Jurisdiction F's corporate regulator",
+        "relationship": "triplet",
+        "predicate": "partners with",
+        "source_chunk": "chunk_supplier_b_policy_0"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "US",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "Local government agencies",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "Local regulatory laws",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "Foreign-owned datasets",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "National security provisions",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "Dataset inspection",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "Jurisdiction F's corporate regulator",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "local government agencies",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "local regulatory laws",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "foreign-owned datasets",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "national security provisions",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_supplier_b_policy_1",
+        "target": "dataset inspection",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Local government agencies",
+        "target": "Local regulatory laws",
+        "relationship": "triplet",
+        "predicate": "undergoes audit",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "Local government agencies",
+        "target": "Foreign-owned datasets",
+        "relationship": "triplet",
+        "predicate": "undergoes audit",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "National security provisions",
+        "target": "Dataset inspection",
+        "relationship": "triplet",
+        "predicate": "governed by",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_0",
+        "target": "Act Z",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_0",
+        "target": "Section 102",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_0",
+        "target": "Domestic Corporations",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_0",
+        "target": "Foreign Entities",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_0",
+        "target": "Foreign Jurisdiction",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_0",
+        "target": "Personally Identifiable Information",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "Act Z",
+        "target": "Domestic Corporations",
+        "relationship": "triplet",
+        "predicate": "must comply with",
+        "source_chunk": "chunk_federal_privacy_regulation_0"
+      },
+      {
+        "source": "Section 102",
+        "target": "Foreign Entities",
+        "relationship": "triplet",
+        "predicate": "prohibits sharing with",
+        "source_chunk": "chunk_federal_privacy_regulation_0"
+      },
+      {
+        "source": "Section 102",
+        "target": "Foreign Jurisdiction",
+        "relationship": "triplet",
+        "predicate": "prohibits sharing with",
+        "source_chunk": "chunk_federal_privacy_regulation_0"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "High-Risk Jurisdictions",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Federal Government",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Domestic Entity",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "PII",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Section 103",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Multi-factor authentication",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "End-to-end encryption",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Foreign jurisdictions lacking adequate safeguards",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Domestic entity sharing PII with High-Risk Jurisdictions",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "immediate regulatory fines",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "cessation of data transfers",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "multi-factor authentication",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "end-to-end encryption",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Databases containing PII",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Foreign jurisdictions",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Domestic entity",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "Section 103 (Security Mandates)",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "chunk_federal_privacy_regulation_1",
+        "target": "regulatory fines",
+        "relationship": "mentioned_in"
+      },
+      {
+        "source": "High-Risk Jurisdictions",
+        "target": "Foreign jurisdictions lacking adequate safeguards",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "High-Risk Jurisdictions",
+        "target": "Foreign jurisdictions",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "Section 103",
+        "target": "multi-factor authentication",
+        "relationship": "triplet",
+        "predicate": "mandates",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "Section 103",
+        "target": "end-to-end encryption",
+        "relationship": "triplet",
+        "predicate": "mandates",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "Domestic entity sharing PII with High-Risk Jurisdictions",
+        "target": "immediate regulatory fines",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "Domestic entity sharing PII with High-Risk Jurisdictions",
+        "target": "cessation of data transfers",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "cessation of data transfers",
+        "target": "Domestic entity",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "multi-factor authentication",
+        "target": "Databases containing PII",
+        "relationship": "triplet",
+        "predicate": "mandates",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "end-to-end encryption",
+        "target": "Databases containing PII",
+        "relationship": "triplet",
+        "predicate": "mandates",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      },
+      {
+        "source": "External Partner",
+        "target": "Encryption at Rest",
+        "relationship": "triplet",
+        "predicate": "must comply with",
+        "source_chunk": "chunk_company_x_policy_1"
+      },
+      {
+        "source": "Cybersecurity Audits",
+        "target": "Local Jurisdiction Requirements",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_company_x_policy_1"
+      },
+      {
+        "source": "local government agencies",
+        "target": "local regulatory laws",
+        "relationship": "triplet",
+        "predicate": "undergoes audit",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "local government agencies",
+        "target": "foreign-owned datasets",
+        "relationship": "triplet",
+        "predicate": "undergoes audit",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "national security provisions",
+        "target": "dataset inspection",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_supplier_b_policy_1"
+      },
+      {
+        "source": "Domestic entity",
+        "target": "regulatory fines",
+        "relationship": "triplet",
+        "predicate": "is subject to",
+        "source_chunk": "chunk_federal_privacy_regulation_1"
+      }
+    ]
+  },
+  "domain_mappings": {
+    "Compliance": [
+      "Foreign Jurisdiction",
+      "Local government agencies",
+      "Domestic Entity",
+      "Section 103 (Security Mandates)",
+      "National security provisions",
+      "Federal Government",
+      "Local jurisdiction requirements",
+      "End-to-end encryption",
+      "Third-Party Auditor",
+      "Domestic Corporations",
+      "Encryption at rest",
+      "Multi-factor authentication",
+      "Corporate Data Sharing Protocol",
+      "foreign-owned datasets",
+      "Domestic entity",
+      "PII",
+      "Cybersecurity Audit",
+      "Section 102",
+      "Act Z",
+      "Customer Data",
+      "Local Jurisdiction Requirements",
+      "External Partner",
+      "Foreign jurisdictions",
+      "Personally Identifiable Information (PII)",
+      "External partner",
+      "Local regulatory laws",
+      "High-Risk Jurisdictions",
+      "national security provisions",
+      "Encryption at Rest",
+      "Foreign-owned datasets",
+      "local government agencies",
+      "Cybersecurity audits",
+      "Foreign Entities",
+      "Jurisdiction F's corporate regulator",
+      "Supplier B",
+      "Corporate Regulator",
+      "local regulatory laws",
+      "Company X",
+      "Cybersecurity Audits",
+      "US",
+      "Section 103",
+      "Jurisdiction F"
+    ],
+    "Corporate Partnerships": [
+      "External partner",
+      "Cybersecurity Audit",
+      "Local jurisdiction requirements",
+      "Supplier B",
+      "Customer Data",
+      "Corporate Regulator",
+      "Company X",
+      "Cybersecurity Audits",
+      "Local Jurisdiction Requirements",
+      "External Partner",
+      "Third-Party Auditor",
+      "Encryption at rest",
+      "Corporate Data Sharing Protocol",
+      "Jurisdiction F",
+      "Encryption at Rest",
+      "Personally Identifiable Information (PII)",
+      "PII",
+      "Cybersecurity audits"
+    ],
+    "Data Security": [
+      "Foreign Jurisdiction",
+      "Local government agencies",
+      "Domestic Entity",
+      "Section 103 (Security Mandates)",
+      "National security provisions",
+      "Federal Government",
+      "Local jurisdiction requirements",
+      "End-to-end encryption",
+      "Third-Party Auditor",
+      "Domestic Corporations",
+      "Encryption at rest",
+      "Multi-factor authentication",
+      "Corporate Data Sharing Protocol",
+      "foreign-owned datasets",
+      "Domestic entity",
+      "PII",
+      "Cybersecurity Audit",
+      "Section 102",
+      "Act Z",
+      "Customer Data",
+      "Local Jurisdiction Requirements",
+      "External Partner",
+      "Foreign jurisdictions",
+      "Personally Identifiable Information (PII)",
+      "External partner",
+      "Local regulatory laws",
+      "High-Risk Jurisdictions",
+      "national security provisions",
+      "Encryption at Rest",
+      "Foreign-owned datasets",
+      "local government agencies",
+      "Cybersecurity audits",
+      "Foreign Entities",
+      "Jurisdiction F's corporate regulator",
+      "Supplier B",
+      "Corporate Regulator",
+      "local regulatory laws",
+      "Company X",
+      "Cybersecurity Audits",
+      "US",
+      "Section 103",
+      "Jurisdiction F"
+    ],
+    "Federal Regulations": [
+      "Foreign Jurisdiction",
+      "Local government agencies",
+      "Domestic Entity",
+      "Section 103 (Security Mandates)",
+      "National security provisions",
+      "Federal Government",
+      "Local jurisdiction requirements",
+      "End-to-end encryption",
+      "Third-Party Auditor",
+      "Domestic Corporations",
+      "Encryption at rest",
+      "Multi-factor authentication",
+      "foreign-owned datasets",
+      "Domestic entity",
+      "PII",
+      "Cybersecurity Audit",
+      "Section 102",
+      "Act Z",
+      "Customer Data",
+      "Foreign jurisdictions",
+      "External partner",
+      "Local regulatory laws",
+      "High-Risk Jurisdictions",
+      "national security provisions",
+      "Foreign-owned datasets",
+      "local government agencies",
+      "Cybersecurity audits",
+      "Foreign Entities",
+      "Jurisdiction F's corporate regulator",
+      "Supplier B",
+      "Corporate Regulator",
+      "local regulatory laws",
+      "Company X",
+      "US",
+      "Section 103",
+      "Jurisdiction F"
+    ]
+  }
+}

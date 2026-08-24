@@ -1,0 +1,5 @@
+{
+  "company_name": "Company X",
+  "document_title": "Corporate Data Sharing Protocol",
+  "content": "Company X partners with Supplier B to process its core customer transaction records. As part of this corporate partnership, Company X shares protected Customer Data, which includes Personally Identifiable Information (PII) such as full names, social security numbers, and banking details. Under section 4 of the agreement, Supplier B is responsible for storing and managing this data in their database servers. Company X mandates that any external partner must implement encryption at rest, but cybersecurity audits are outsourced to the partner's local jurisdiction requirements."
+}
